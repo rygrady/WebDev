@@ -1,0 +1,100 @@
+*{
+	margin: 1;
+	padding: 1; 
+}
+#sidebarA{
+	width: 500px;
+	height: 100px;
+	float: left;
+	padding-left: 3em;
+	font-size: 130%;
+	text-align: center;
+}
+#sidebarB{
+	width: 500px;
+	height: 100px;
+	float: right;
+	padding-right: 3em;
+}
+
+html{
+	background-color: #41B3A3;
+}
+
+/* the styles for the elements----------------------------------------------------------------------- */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 120%;
+	margin: auto;
+}
+/*nav time nav time nav time-------------------------------------------------------------------------*/
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul {
+	margin: auto 0;
+	padding: 0; 
+}
+#nav_menu ul li a{
+	text-align: center;
+	display: block;
+	width: 480px;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #06799F;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear" both;
+}
+/* the styles for the header------------------------------------------------------------------------- */
+header {
+	
+}
+header h2 {
+	text-align: center ;
+	color: #06799F;
+	text-shadow: 0 0 3px black;
+	font-size: 200%;
+}
+/*main styles-----------------------------------------------------------------------------------------*/
+main h2 {
+	border-bottom: 3px solid #06799F;
+}
+main h3 {
+	border-bottom: 3px solid #06799F;
+	text-align: center;
+}
+
+/* the styles for the section------------------------------------------------------------------------ */
+section p{
+	padding-left: 0;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	margin: 0;
+	text-align: center;
+}
+
+
+/* the styles for the footer------------------------------------------------------------------------- */
+footer p{
+	position: block;
+	padding-top: 1em;
+	text-align: center;
+	border-top: 3px solid #06799F; 	
+
+}

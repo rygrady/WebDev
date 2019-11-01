@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Alaska">
+	<meta name="keywords" content="Alaska, Parks, Nature,">
+	<title>Alaska National Parks</title>
+	<link rel="shortcut icon" href="images/alaska2.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/photog.css">
+</head>
+
+<body>
+<!-------------------------Header----And----Navigtion---------------------------------->
+	<header>	
+		<h2>Alaska National Parks</h2>	
+	</header>
+	<nav id="nav_menu">
+		<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li><a href="HistoricalSites.html">Historical Sites</a></li>
+			<li><a href="NationalPreserves.html">National Preserves</a></li>
+			<li><a href="PhotoGallery.html">Photo Gallery</a></li>
+		</ul>
+	</nav>
+	
+<main>
+		<h2>Photo Gallery</h2>
+	<h3>Welcome to the Alaska National Parks Photo Gallery. All of the images below have been submitted by visitors to our parks.<br> After your visit to our parks, send us your favorite photos so we can add them to our gallery. </h3>
+	<section>
+		<img class="mySlides" src="images/walk.jpg">
+		<img class="mySlides" src="images/fish.jpg">
+		<img class="mySlides" src="images/goat.jpg">
+		<img class="mySlides" src="images/woman.jpg">
+		<img class="mySlides" src="images/air.jpg">
+		<img class="mySlides" src="images/people.jpg">
+		
+	</section>
+</main>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+  			var i;
+  			var x = document.getElementsByClassName("mySlides");
+  			for (i = 0; i < x.length; i++) {
+    			x[i].style.display = "none";  
+ 			}
+ 			 myIndex++;
+ 			 if (myIndex > x.length) {myIndex = 1}    
+ 			 x[myIndex-1].style.display = "block";  
+  			setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+	</script>
+</body>
+	<footer>
+		<p>&copy 2019, Ryan Grady Business</p> 
+	</footer>
+</html>
